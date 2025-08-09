@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #78accd;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: white;
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 380px;
+}
+
+header {
+    color: #929da9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 12px;
+}
+
+hr {
+    color: #b3b8bd;
+    height: 1px;
+    margin: 0;
+    padding: 0px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 days per row */
+    text-align: center;
+}
+
+.day {
+    color: #7f8a96;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    box-sizing: border-box;
+}
+
+.Dates {
+    font-size: 12px;
+    padding: 5px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.first-line, .second-line, .third-line, .fourth-line, .fifth-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-line {
+    gap: 37px;
+}
+
+.second-line {
+    gap: 39px;
+}
+
+.third-line {
+    gap: 33px;
+}
+
+.fourth-line {
+    gap: 33px;
+}
+
+.fifth-line {
+    gap: 34px;
+}
+
+.date1 {
+    color: #ece7e3;
+}
+
+.orange {
+    display: inline-block;
+    align-items: center; 
+    justify-content: center;
+    background-color: #de6e46; 
+    color: #ffffff; 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center; 
+    flex-shrink: 0;
+    line-height: 18px;
+    vertical-align: middle;
+    padding: 2px 4px;
+    margin-top: -2px;
+}
+
+.date-circle1, .date-circle2 {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    flex-shrink: 0;
+    line-height: 18px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.date-circle1 {
+    border: 2px solid #de6e46;
+}
+
+.date-circle2 {
+    border: 2px solid #ae5989;
+}
+
+footer {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer span {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    flex-shrink: 0;
+    line-height: 18px;
+    vertical-align: middle;
+    margin-top: -2px;
+    border: 2px solid #de6e46;
+}
